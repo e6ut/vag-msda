@@ -280,9 +280,9 @@ def process_domain_data(features, labels):
     return sorted_features, num_samples
 
 
-class MSMDAERNet(nn.Module):
+class VAGMSDANet(nn.Module):
     def __init__(self, pretrained=False, number_of_source=15, number_of_category=4):
-        super(MSMDAERNet, self).__init__()
+        super(VAGMSDANet, self).__init__()
         self.sharedNet = pretrained_CFE(pretrained=pretrained)
 
         for i in range(number_of_source):
