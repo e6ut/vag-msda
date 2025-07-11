@@ -11,8 +11,8 @@ import scipy.io as scio
 import numpy as np
 import random
 random.seed(42)
-dataset_path = {'seed4': '/home/u202322802055/GCNN/SEED/SEED_IV/SEED_IV/eeg_feature_smooth', 'seed3': '/home/u202322802055/GCNN/SEED/SEED/SEED/SEED'}
-#/home/u202322802055/GCNN/SEED/SEED_IV/SEED_IV/eeg_feature_smooth     D:/研究生记录/GCNN/SEED/SEED_IV/SEED_IV/eeg_feature_smooth
+dataset_path = {'seed4': '', 'seed3': ''}
+
 '''
 Tools
 '''
