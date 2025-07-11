@@ -59,7 +59,7 @@ def create_logger(args):
 
 
 class VAGMSDA():
-    def __init__(self, model=models.MSMDAERNet(), source_loaders=0, target_loader=0, batch_size=16, iteration=2000,
+    def __init__(self, model=models.VAGMSDANet(), source_loaders=0, target_loader=0, batch_size=16, iteration=2000,
                  lr=0.001, momentum=0.9, log_interval=10, id = 1,save_model=None):
         self.model = model
         self.model.to(device)
