@@ -25,7 +25,7 @@ def setup_seed(seed):
     torch.backends.cudnn.deterministic = True
 
 
-setup_seed(22)
+setup_seed()
 
 writer = SummaryWriter()
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
