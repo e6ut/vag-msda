@@ -25,7 +25,7 @@ def setup_seed(seed):
     torch.backends.cudnn.deterministic = True
 
 
-setup_seed()
+
 
 writer = SummaryWriter()
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -309,7 +309,7 @@ def cross_subject(data, label, session_id, subject_id, category_number, batch_si
                     momentum=momentum,
                     log_interval=log_interval,
                     id = [session_id, subject_id],
-                    save_model='model_aamsda_'+dataset_name+'_cross_subject' )
+                    save_model='model_vagmsda_'+dataset_name+'_cross_subject' )
     # logging.info(model.__getModel__())
     acc, confusion = model.train()
     logging.info('Target_subject_id: {}, current_session_id: {}, acc: {}'.format(test_idx, session_id, acc))
@@ -347,7 +347,7 @@ def cross_session(data, label, session_id, subject_id, category_number, batch_si
                     momentum=momentum,
                     log_interval=log_interval,
                     id = [session_id, subject_id],
-                    save_model='model_aamsda_'+dataset_name+'_cross_session')
+                    save_model='model_vagmsda_'+dataset_name+'_cross_session')
     # logging.info(model.__getModel__())
     acc, confusion = model.train()
     logging.info('Target_session_id: {}, current_subject_id: {}, acc: {}'.format(test_idx, subject_id, acc))
